@@ -1,0 +1,98 @@
+/* ---------- Existing POS Styles ---------- */
+/* Sidebar, menu, product grid, order summary already included above */
+
+/* Highlight selected order summary item */
+#order-summary-box ul li.selected {
+  background-color: #f9d1d1; /* Light red highlight */
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+/* ---------- VOID PASSWORD MODAL STYLES ---------- */
+#voidModal {
+  display: none; /* hidden by default */
+  position: fixed;
+  z-index: 9999;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.6); /* semi-transparent overlay */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#voidModal .modal-content {
+  background: white;
+  width: 350px;
+  padding: 25px 20px;
+  border-radius: 12px;
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+#voidModal h3 {
+  margin-bottom: 10px;
+  color: #c0392b; /* matches void button color */
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
+}
+
+#voidModal p {
+  margin-bottom: 15px;
+  color: #333;
+  font-size: 14px;
+}
+
+#voidModal input {
+  width: 90%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 6px;
+  border: 1px solid #bca58c;
+  font-size: 14px;
+  outline: none;
+}
+
+#voidModal .modal-buttons {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+#voidModal .modal-buttons button {
+  flex: 1;
+  padding: 10px 18px;
+  border: none;
+  border-radius: 6px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#cancelVoid {
+  background: #777;
+  color: white;
+}
+
+#cancelVoid:hover {
+  background: #555;
+}
+
+#confirmVoid {
+  background: #c0392b;
+  color: white;
+}
+
+#confirmVoid:hover {
+  background: #a83232;
+}
+
+/* Optional: make modal input focus visible */
+#voidModal input:focus {
+  border-color: #c0392b;
+  box-shadow: 0 0 5px rgba(192, 57, 43, 0.5);
+}
+
